@@ -20,7 +20,7 @@ export default async function patreon(
     if (!scriptElement) throw new Error("Failed to get nextjs page props");
     const json = JSON.parse(scriptElement.innerHTML);
     const id =
-      json.props.pageProps.bootstrapEnvelope.bootstrap.campaign.data
+      json.props.pageProps.bootstrapEnvelope.pageBootstrap.campaign.data
         .relationships.creator.data.id;
     if (!id)
       throw new Error(
