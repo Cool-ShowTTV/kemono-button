@@ -21,7 +21,7 @@
 // @grant        GM_addStyle
 // ==/UserScript==
 
-(t=>{if(typeof GM_addStyle=="function"){GM_addStyle(t);return}const e=document.createElement("style");e.textContent=t,document.head.append(e)})(' *,:before,:after{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}:before,:after{--tw-content: ""}html,:host{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;-o-tab-size:4;tab-size:4;font-family:ui-sans-serif,system-ui,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,samp,pre{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,[type=button],[type=reset],[type=submit]{-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dl,dd,h1,h2,h3,h4,h5,h6,hr,figure,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}ol,ul,menu{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{opacity:1;color:#9ca3af}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}button,[role=button]{cursor:pointer}:disabled{cursor:default}img,svg,video,canvas,audio,iframe,embed,object{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]{display:none}*,:before,:after{--tw-border-spacing-x: 0;--tw-border-spacing-y: 0;--tw-translate-x: 0;--tw-translate-y: 0;--tw-rotate: 0;--tw-skew-x: 0;--tw-skew-y: 0;--tw-scale-x: 1;--tw-scale-y: 1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness: proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width: 0px;--tw-ring-offset-color: #fff;--tw-ring-color: rgb(59 130 246 / .5);--tw-ring-offset-shadow: 0 0 #0000;--tw-ring-shadow: 0 0 #0000;--tw-shadow: 0 0 #0000;--tw-shadow-colored: 0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }::backdrop{--tw-border-spacing-x: 0;--tw-border-spacing-y: 0;--tw-translate-x: 0;--tw-translate-y: 0;--tw-rotate: 0;--tw-skew-x: 0;--tw-skew-y: 0;--tw-scale-x: 1;--tw-scale-y: 1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness: proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width: 0px;--tw-ring-offset-color: #fff;--tw-ring-color: rgb(59 130 246 / .5);--tw-ring-offset-shadow: 0 0 #0000;--tw-ring-shadow: 0 0 #0000;--tw-shadow: 0 0 #0000;--tw-shadow-colored: 0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }.container{width:100%}@media (min-width: 640px){.container{max-width:640px}}@media (min-width: 768px){.container{max-width:768px}}@media (min-width: 1024px){.container{max-width:1024px}}@media (min-width: 1280px){.container{max-width:1280px}}@media (min-width: 1536px){.container{max-width:1536px}}.fixed{position:fixed}.absolute{position:absolute}.bottom-12{bottom:3rem}.bottom-16{bottom:4rem}.bottom-\\[calc\\(5rem_-_0\\.5rem\\)\\]{bottom:4.5rem}.left-2{left:.5rem}.z-\\[69420\\]{z-index:69420}.col-span-2{grid-column:span 2 / span 2}.my-1{margin-top:.25rem;margin-bottom:.25rem}.my-1\\.5{margin-top:.375rem;margin-bottom:.375rem}.flex{display:flex}.grid{display:grid}.h-1{height:.25rem}.h-1\\.5{height:.375rem}.h-10{height:2.5rem}.h-2{height:.5rem}.h-4{height:1rem}.h-fit{height:-moz-fit-content;height:fit-content}.w-1{width:.25rem}.w-1\\.5{width:.375rem}.w-10{width:2.5rem}.w-2{width:.5rem}.w-4{width:1rem}.w-fit{width:-moz-fit-content;width:fit-content}.w-full{width:100%}.max-w-sm{max-width:24rem}.-translate-x-full{--tw-translate-x: -100%;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.translate-x-0{--tw-translate-x: 0px;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.transform{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@keyframes ping{75%,to{transform:scale(2);opacity:0}}.animate-ping{animation:ping 1s cubic-bezier(0,0,.2,1) infinite}@keyframes pulse{50%{opacity:.5}}.animate-pulse{animation:pulse 2s cubic-bezier(.4,0,.6,1) infinite}.cursor-pointer{cursor:pointer}.select-none{-webkit-user-select:none;-moz-user-select:none;user-select:none}.grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.flex-col{flex-direction:column}.place-items-center{place-items:center}.items-center{align-items:center}.justify-center{justify-content:center}.gap-1{gap:.25rem}.gap-1\\.5{gap:.375rem}.gap-3{gap:.75rem}.gap-x-3{-moz-column-gap:.75rem;column-gap:.75rem}.gap-y-0{row-gap:0px}.rounded{border-radius:.25rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:.5rem}.border{border-width:1px}.border-zinc-800{--tw-border-opacity: 1;border-color:rgb(39 39 42 / var(--tw-border-opacity))}.bg-blue-500{--tw-bg-opacity: 1;background-color:rgb(59 130 246 / var(--tw-bg-opacity))}.bg-green-600{--tw-bg-opacity: 1;background-color:rgb(22 163 74 / var(--tw-bg-opacity))}.bg-red-600{--tw-bg-opacity: 1;background-color:rgb(220 38 38 / var(--tw-bg-opacity))}.bg-zinc-900{--tw-bg-opacity: 1;background-color:rgb(24 24 27 / var(--tw-bg-opacity))}.px-2{padding-left:.5rem;padding-right:.5rem}.px-4{padding-left:1rem;padding-right:1rem}.py-1{padding-top:.25rem;padding-bottom:.25rem}.py-2{padding-top:.5rem;padding-bottom:.5rem}.text-center{text-align:center}.text-base{font-size:1rem;line-height:1.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:.875rem;line-height:1.25rem}.text-xs{font-size:.75rem;line-height:1rem}.font-bold{font-weight:700}.\\!text-white{--tw-text-opacity: 1 !important;color:rgb(255 255 255 / var(--tw-text-opacity))!important}.text-blue-400{--tw-text-opacity: 1;color:rgb(96 165 250 / var(--tw-text-opacity))}.text-zinc-400{--tw-text-opacity: 1;color:rgb(161 161 170 / var(--tw-text-opacity))}.text-zinc-50{--tw-text-opacity: 1;color:rgb(250 250 250 / var(--tw-text-opacity))}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.opacity-25{opacity:.25}.drop-shadow-lg{--tw-drop-shadow: drop-shadow(0 10px 8px rgb(0 0 0 / .04)) drop-shadow(0 4px 3px rgb(0 0 0 / .1));filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.drop-shadow-md{--tw-drop-shadow: drop-shadow(0 4px 3px rgb(0 0 0 / .07)) drop-shadow(0 2px 2px rgb(0 0 0 / .06));filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.backdrop-blur-lg{--tw-backdrop-blur: blur(16px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.duration-150{transition-duration:.15s}.ease-in-out{transition-timing-function:cubic-bezier(.4,0,.2,1)}:root{font-size:14px}.hover\\:bg-blue-400:hover{--tw-bg-opacity: 1;background-color:rgb(96 165 250 / var(--tw-bg-opacity))}.hover\\:text-zinc-50:hover{--tw-text-opacity: 1;color:rgb(250 250 250 / var(--tw-text-opacity))} ');
+(t=>{if(typeof GM_addStyle=="function"){GM_addStyle(t);return}const e=document.createElement("style");e.textContent=t,document.head.append(e)})(' *,:before,:after{--tw-border-spacing-x: 0;--tw-border-spacing-y: 0;--tw-translate-x: 0;--tw-translate-y: 0;--tw-rotate: 0;--tw-skew-x: 0;--tw-skew-y: 0;--tw-scale-x: 1;--tw-scale-y: 1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness: proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width: 0px;--tw-ring-offset-color: #fff;--tw-ring-color: rgb(59 130 246 / .5);--tw-ring-offset-shadow: 0 0 #0000;--tw-ring-shadow: 0 0 #0000;--tw-shadow: 0 0 #0000;--tw-shadow-colored: 0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x: 0;--tw-border-spacing-y: 0;--tw-translate-x: 0;--tw-translate-y: 0;--tw-rotate: 0;--tw-skew-x: 0;--tw-skew-y: 0;--tw-scale-x: 1;--tw-scale-y: 1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness: proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width: 0px;--tw-ring-offset-color: #fff;--tw-ring-color: rgb(59 130 246 / .5);--tw-ring-offset-shadow: 0 0 #0000;--tw-ring-shadow: 0 0 #0000;--tw-shadow: 0 0 #0000;--tw-shadow-colored: 0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }*,:before,:after{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}:before,:after{--tw-content: ""}html,:host{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;-o-tab-size:4;tab-size:4;font-family:ui-sans-serif,system-ui,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,samp,pre{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dl,dd,h1,h2,h3,h4,h5,h6,hr,figure,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}ol,ul,menu{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{opacity:1;color:#9ca3af}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}button,[role=button]{cursor:pointer}:disabled{cursor:default}img,svg,video,canvas,audio,iframe,embed,object{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]{display:none}.container{width:100%}@media (min-width: 640px){.container{max-width:640px}}@media (min-width: 768px){.container{max-width:768px}}@media (min-width: 1024px){.container{max-width:1024px}}@media (min-width: 1280px){.container{max-width:1280px}}@media (min-width: 1536px){.container{max-width:1536px}}.fixed{position:fixed}.absolute{position:absolute}.bottom-12{bottom:3rem}.bottom-16{bottom:4rem}.bottom-\\[calc\\(5rem_-_0\\.5rem\\)\\]{bottom:4.5rem}.left-2{left:.5rem}.z-\\[69420\\]{z-index:69420}.col-span-2{grid-column:span 2 / span 2}.flex{display:flex}.grid{display:grid}.h-1\\.5{height:.375rem}.h-10{height:2.5rem}.h-2{height:.5rem}.h-4{height:1rem}.h-fit{height:-moz-fit-content;height:fit-content}.w-1\\.5{width:.375rem}.w-10{width:2.5rem}.w-2{width:.5rem}.w-4{width:1rem}.w-fit{width:-moz-fit-content;width:fit-content}.w-full{width:100%}.max-w-sm{max-width:24rem}.-translate-x-full{--tw-translate-x: -100%;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.translate-x-0{--tw-translate-x: 0px;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.transform{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@keyframes ping{75%,to{transform:scale(2);opacity:0}}.animate-ping{animation:ping 1s cubic-bezier(0,0,.2,1) infinite}@keyframes pulse{50%{opacity:.5}}.animate-pulse{animation:pulse 2s cubic-bezier(.4,0,.6,1) infinite}.cursor-pointer{cursor:pointer}.select-none{-webkit-user-select:none;-moz-user-select:none;user-select:none}.grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.flex-col{flex-direction:column}.place-items-center{place-items:center}.items-center{align-items:center}.justify-center{justify-content:center}.gap-1{gap:.25rem}.gap-1\\.5{gap:.375rem}.gap-3{gap:.75rem}.gap-x-3{-moz-column-gap:.75rem;column-gap:.75rem}.gap-y-0{row-gap:0px}.rounded{border-radius:.25rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:.5rem}.border{border-width:1px}.border-zinc-800{--tw-border-opacity: 1;border-color:rgb(39 39 42 / var(--tw-border-opacity))}.bg-blue-500{--tw-bg-opacity: 1;background-color:rgb(59 130 246 / var(--tw-bg-opacity))}.bg-green-600{--tw-bg-opacity: 1;background-color:rgb(22 163 74 / var(--tw-bg-opacity))}.bg-red-600{--tw-bg-opacity: 1;background-color:rgb(220 38 38 / var(--tw-bg-opacity))}.bg-zinc-900{--tw-bg-opacity: 1;background-color:rgb(24 24 27 / var(--tw-bg-opacity))}.px-2{padding-left:.5rem;padding-right:.5rem}.px-4{padding-left:1rem;padding-right:1rem}.py-1{padding-top:.25rem;padding-bottom:.25rem}.py-2{padding-top:.5rem;padding-bottom:.5rem}.text-center{text-align:center}.text-base{font-size:1rem;line-height:1.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:.875rem;line-height:1.25rem}.text-xs{font-size:.75rem;line-height:1rem}.font-bold{font-weight:700}.\\!text-white{--tw-text-opacity: 1 !important;color:rgb(255 255 255 / var(--tw-text-opacity))!important}.text-blue-400{--tw-text-opacity: 1;color:rgb(96 165 250 / var(--tw-text-opacity))}.text-zinc-400{--tw-text-opacity: 1;color:rgb(161 161 170 / var(--tw-text-opacity))}.text-zinc-50{--tw-text-opacity: 1;color:rgb(250 250 250 / var(--tw-text-opacity))}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.drop-shadow-lg{--tw-drop-shadow: drop-shadow(0 10px 8px rgb(0 0 0 / .04)) drop-shadow(0 4px 3px rgb(0 0 0 / .1));filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.drop-shadow-md{--tw-drop-shadow: drop-shadow(0 4px 3px rgb(0 0 0 / .07)) drop-shadow(0 2px 2px rgb(0 0 0 / .06));filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.backdrop-blur-lg{--tw-backdrop-blur: blur(16px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.duration-150{transition-duration:.15s}.ease-in-out{transition-timing-function:cubic-bezier(.4,0,.2,1)}:root{font-size:14px}.hover\\:bg-blue-400:hover{--tw-bg-opacity: 1;background-color:rgb(96 165 250 / var(--tw-bg-opacity))}.hover\\:text-zinc-50:hover{--tw-text-opacity: 1;color:rgb(250 250 250 / var(--tw-text-opacity))} ');
 
 (function (y, require$$0) {
   'use strict';
@@ -47,10 +47,7 @@
 
   var __defProp = Object.defineProperty;
   var __defNormalProp = (obj, key, value) => key in obj ? __defProp(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
-  var __publicField = (obj, key, value) => {
-    __defNormalProp(obj, typeof key !== "symbol" ? key + "" : key, value);
-    return value;
-  };
+  var __publicField = (obj, key, value) => __defNormalProp(obj, typeof key !== "symbol" ? key + "" : key, value);
   var jsxRuntime = { exports: {} };
   var reactJsxRuntime_production_min = {};
   /**
@@ -68,11 +65,8 @@
     void 0 !== g2 && (e2 = "" + g2);
     void 0 !== a2.key && (e2 = "" + a2.key);
     void 0 !== a2.ref && (h2 = a2.ref);
-    for (b2 in a2)
-      m$2.call(a2, b2) && !p$1.hasOwnProperty(b2) && (d2[b2] = a2[b2]);
-    if (c2 && c2.defaultProps)
-      for (b2 in a2 = c2.defaultProps, a2)
-        void 0 === d2[b2] && (d2[b2] = a2[b2]);
+    for (b2 in a2) m$2.call(a2, b2) && !p$1.hasOwnProperty(b2) && (d2[b2] = a2[b2]);
+    if (c2 && c2.defaultProps) for (b2 in a2 = c2.defaultProps, a2) void 0 === d2[b2] && (d2[b2] = a2[b2]);
     return { $$typeof: k, type: c2, key: e2, ref: h2, props: d2, _owner: n$2.current };
   }
   reactJsxRuntime_production_min.Fragment = l$1;
@@ -98,23 +92,20 @@
   }, c = {}, s = (e2) => {
     if ("object" == typeof e2) {
       let t2 = "";
-      for (let r in e2)
-        t2 += r + s(e2[r]);
+      for (let r in e2) t2 += r + s(e2[r]);
       return t2;
     }
     return e2;
   }, i = (e2, t2, r, i2, p2) => {
     let u2 = s(e2), d2 = c[u2] || (c[u2] = ((e3) => {
       let t3 = 0, r2 = 11;
-      for (; t3 < e3.length; )
-        r2 = 101 * r2 + e3.charCodeAt(t3++) >>> 0;
+      for (; t3 < e3.length; ) r2 = 101 * r2 + e3.charCodeAt(t3++) >>> 0;
       return "go" + r2;
     })(u2));
     if (!c[d2]) {
       let t3 = u2 !== e2 ? e2 : ((e3) => {
         let t4, r2, o2 = [{}];
-        for (; t4 = l.exec(e3.replace(a, "")); )
-          t4[4] ? o2.shift() : t4[3] ? (r2 = t4[3].replace(n$1, " ").trim(), o2.unshift(o2[0][r2] = o2[0][r2] || {})) : o2[0][t4[1]] = t4[2].replace(n$1, " ").trim();
+        for (; t4 = l.exec(e3.replace(a, "")); ) t4[4] ? o2.shift() : t4[3] ? (r2 = t4[3].replace(n$1, " ").trim(), o2.unshift(o2[0][r2] = o2[0][r2] || {})) : o2[0][t4[1]] = t4[2].replace(n$1, " ").trim();
         return o2[0];
       })(e2);
       c[d2] = o(p2 ? { ["@keyframes " + d2]: t3 } : t3, r ? "" : "." + d2);
@@ -147,11 +138,11 @@
       let l2 = arguments;
       function a2(n2, o2) {
         let c2 = Object.assign({}, n2), s2 = c2.className || a2.className;
-        r.p = Object.assign({ theme: f && f() }, c2), r.o = / *go\d+/.test(s2), c2.className = u$1.apply(r, l2) + (s2 ? " " + s2 : ""), t2 && (c2.ref = o2);
+        r.p = Object.assign({ theme: f && f() }, c2), r.o = / *go\d+/.test(s2), c2.className = u$1.apply(r, l2) + (s2 ? " " + s2 : "");
         let i2 = e2;
         return e2[0] && (i2 = c2.as || e2, delete c2.as), g && i2[0] && g(c2), d(i2, c2);
       }
-      return t2 ? t2(a2) : a2;
+      return a2;
     };
   }
   var W = (e2) => typeof e2 == "function", T = (e2, t2) => W(e2) ? e2(t2) : e2;
@@ -170,8 +161,7 @@
   })();
   var Q = 20;
   var S = /* @__PURE__ */ new Map(), X = 1e3, $ = (e2) => {
-    if (S.has(e2))
-      return;
+    if (S.has(e2)) return;
     let t2 = setTimeout(() => {
       S.delete(e2), u({ type: 4, toastId: e2 });
     }, X);
@@ -242,11 +232,9 @@
   }, D = (e2) => {
     let { toasts: t2, pausedAt: o2 } = I(e2);
     y.useEffect(() => {
-      if (o2)
-        return;
+      if (o2) return;
       let r = Date.now(), c2 = t2.map((i2) => {
-        if (i2.duration === 1 / 0)
-          return;
+        if (i2.duration === 1 / 0) return;
         let d2 = (i2.duration || 0) + i2.pauseDuration - (r - i2.createdAt);
         if (d2 < 0) {
           i2.visible && n.dismiss(i2.id);
@@ -533,6 +521,7 @@ to {
     kind === "object" && isFunction(thing.toString) && thing.toString() === "[object FormData]"));
   };
   const isURLSearchParams = kindOfTest("URLSearchParams");
+  const [isReadableStream, isRequest, isResponse, isHeaders] = ["ReadableStream", "Request", "Response", "Headers"].map(kindOfTest);
   const trim = (str) => str.trim ? str.trim() : str.replace(/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g, "");
   function forEach(obj, fn, { allOwnKeys = false } = {}) {
     if (obj === null || typeof obj === "undefined") {
@@ -571,8 +560,7 @@ to {
     return null;
   }
   const _global = (() => {
-    if (typeof globalThis !== "undefined")
-      return globalThis;
+    if (typeof globalThis !== "undefined") return globalThis;
     return typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : global;
   })();
   const isContextDefined = (context) => !isUndefined(context) && context !== _global;
@@ -626,8 +614,7 @@ to {
     let prop;
     const merged = {};
     destObj = destObj || {};
-    if (sourceObj == null)
-      return destObj;
+    if (sourceObj == null) return destObj;
     do {
       props = Object.getOwnPropertyNames(sourceObj);
       i2 = props.length;
@@ -652,13 +639,10 @@ to {
     return lastIndex !== -1 && lastIndex === position;
   };
   const toArray = (thing) => {
-    if (!thing)
-      return null;
-    if (isArray(thing))
-      return thing;
+    if (!thing) return null;
+    if (isArray(thing)) return thing;
     let i2 = thing.length;
-    if (!isNumber(i2))
-      return null;
+    if (!isNumber(i2)) return null;
     const arr = new Array(i2);
     while (i2-- > 0) {
       arr[i2] = thing[i2];
@@ -715,8 +699,7 @@ to {
         return false;
       }
       const value = obj[name];
-      if (!isFunction(value))
-        return;
+      if (!isFunction(value)) return;
       descriptor.enumerable = false;
       if ("writable" in descriptor) {
         descriptor.writable = false;
@@ -742,8 +725,7 @@ to {
   const noop = () => {
   };
   const toFiniteNumber = (value, defaultValue) => {
-    value = +value;
-    return Number.isFinite(value) ? value : defaultValue;
+    return value != null && Number.isFinite(value = +value) ? value : defaultValue;
   };
   const ALPHA = "abcdefghijklmnopqrstuvwxyz";
   const DIGIT = "0123456789";
@@ -787,6 +769,26 @@ to {
   };
   const isAsyncFn = kindOfTest("AsyncFunction");
   const isThenable = (thing) => thing && (isObject(thing) || isFunction(thing)) && isFunction(thing.then) && isFunction(thing.catch);
+  const _setImmediate = ((setImmediateSupported, postMessageSupported) => {
+    if (setImmediateSupported) {
+      return setImmediate;
+    }
+    return postMessageSupported ? ((token, callbacks) => {
+      _global.addEventListener("message", ({ source, data }) => {
+        if (source === _global && data === token) {
+          callbacks.length && callbacks.shift()();
+        }
+      }, false);
+      return (cb) => {
+        callbacks.push(cb);
+        _global.postMessage(token, "*");
+      };
+    })(`axios@${Math.random()}`, []) : (cb) => setTimeout(cb);
+  })(
+    typeof setImmediate === "function",
+    isFunction(_global.postMessage)
+  );
+  const asap = typeof queueMicrotask !== "undefined" ? queueMicrotask.bind(_global) : typeof process !== "undefined" && process.nextTick || _setImmediate;
   const utils$1 = {
     isArray,
     isArrayBuffer,
@@ -798,6 +800,10 @@ to {
     isBoolean,
     isObject,
     isPlainObject,
+    isReadableStream,
+    isRequest,
+    isResponse,
+    isHeaders,
     isUndefined,
     isDate,
     isFile,
@@ -839,7 +845,9 @@ to {
     isSpecCompliantForm,
     toJSONObject,
     isAsyncFn,
-    isThenable
+    isThenable,
+    setImmediate: _setImmediate,
+    asap
   };
   function AxiosError(message, code, config, request, response) {
     Error.call(this);
@@ -853,7 +861,10 @@ to {
     code && (this.code = code);
     config && (this.config = config);
     request && (this.request = request);
-    response && (this.response = response);
+    if (response) {
+      this.response = response;
+      this.status = response.status ? response.status : null;
+    }
   }
   utils$1.inherits(AxiosError, Error, {
     toJSON: function toJSON() {
@@ -872,7 +883,7 @@ to {
         // Axios
         config: utils$1.toJSONObject(this.config),
         code: this.code,
-        status: this.response && this.response.status ? this.response.status : null
+        status: this.status
       };
     }
   });
@@ -918,8 +929,7 @@ to {
     return utils$1.endsWith(key, "[]") ? key.slice(0, -2) : key;
   }
   function renderKey(path, key, dots) {
-    if (!path)
-      return key;
+    if (!path) return key;
     return path.concat(key).map(function each(token, i2) {
       token = removeBrackets(token);
       return !dots && i2 ? "[" + token + "]" : token;
@@ -953,8 +963,7 @@ to {
       throw new TypeError("visitor must be a function");
     }
     function convertValue(value) {
-      if (value === null)
-        return "";
+      if (value === null) return "";
       if (utils$1.isDate(value)) {
         return value.toISOString();
       }
@@ -997,8 +1006,7 @@ to {
       isVisitable
     });
     function build(value, path) {
-      if (utils$1.isUndefined(value))
-        return;
+      if (utils$1.isUndefined(value)) return;
       if (stack.indexOf(value) !== -1) {
         throw Error("Circular reference detected in " + path.join("."));
       }
@@ -1156,18 +1164,20 @@ to {
     protocols: ["http", "https", "file", "blob", "url", "data"]
   };
   const hasBrowserEnv = typeof window !== "undefined" && typeof document !== "undefined";
-  const hasStandardBrowserEnv = ((product) => {
-    return hasBrowserEnv && ["ReactNative", "NativeScript", "NS"].indexOf(product) < 0;
-  })(typeof navigator !== "undefined" && navigator.product);
+  const _navigator = typeof navigator === "object" && navigator || void 0;
+  const hasStandardBrowserEnv = hasBrowserEnv && (!_navigator || ["ReactNative", "NativeScript", "NS"].indexOf(_navigator.product) < 0);
   const hasStandardBrowserWebWorkerEnv = (() => {
     return typeof WorkerGlobalScope !== "undefined" && // eslint-disable-next-line no-undef
     self instanceof WorkerGlobalScope && typeof self.importScripts === "function";
   })();
+  const origin = hasBrowserEnv && window.location.href || "http://localhost";
   const utils = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
     __proto__: null,
     hasBrowserEnv,
     hasStandardBrowserEnv,
-    hasStandardBrowserWebWorkerEnv
+    hasStandardBrowserWebWorkerEnv,
+    navigator: _navigator,
+    origin
   }, Symbol.toStringTag, { value: "Module" }));
   const platform = {
     ...utils,
@@ -1204,8 +1214,7 @@ to {
   function formDataToJSON(formData) {
     function buildPath(path, value, target, index) {
       let name = path[index++];
-      if (name === "__proto__")
-        return true;
+      if (name === "__proto__") return true;
       const isNumericKey = Number.isFinite(+name);
       const isLast = index >= path.length;
       name = !name && utils$1.isArray(target) ? target.length : name;
@@ -1246,11 +1255,11 @@ to {
         }
       }
     }
-    return (encoder || JSON.stringify)(rawValue);
+    return (0, JSON.stringify)(rawValue);
   }
   const defaults = {
     transitional: transitionalDefaults,
-    adapter: ["xhr", "http"],
+    adapter: ["xhr", "http", "fetch"],
     transformRequest: [function transformRequest(data, headers) {
       const contentType = headers.getContentType() || "";
       const hasJSONContentType = contentType.indexOf("application/json") > -1;
@@ -1262,7 +1271,7 @@ to {
       if (isFormData2) {
         return hasJSONContentType ? JSON.stringify(formDataToJSON(data)) : data;
       }
-      if (utils$1.isArrayBuffer(data) || utils$1.isBuffer(data) || utils$1.isStream(data) || utils$1.isFile(data) || utils$1.isBlob(data)) {
+      if (utils$1.isArrayBuffer(data) || utils$1.isBuffer(data) || utils$1.isStream(data) || utils$1.isFile(data) || utils$1.isBlob(data) || utils$1.isReadableStream(data)) {
         return data;
       }
       if (utils$1.isArrayBufferView(data)) {
@@ -1296,6 +1305,9 @@ to {
       const transitional2 = this.transitional || defaults.transitional;
       const forcedJSONParsing = transitional2 && transitional2.forcedJSONParsing;
       const JSONRequested = this.responseType === "json";
+      if (utils$1.isResponse(data) || utils$1.isReadableStream(data)) {
+        return data;
+      }
       if (data && utils$1.isString(data) && (forcedJSONParsing && !this.responseType || JSONRequested)) {
         const silentJSONParsing = transitional2 && transitional2.silentJSONParsing;
         const strictJSONParsing = !silentJSONParsing && JSONRequested;
@@ -1338,7 +1350,6 @@ to {
   utils$1.forEach(["delete", "get", "head", "post", "put", "patch"], (method) => {
     defaults.headers[method] = {};
   });
-  const defaults$1 = defaults;
   const ignoreDuplicateOf = utils$1.toObjectSet([
     "age",
     "authorization",
@@ -1409,8 +1420,7 @@ to {
     if (isHeaderNameFilter) {
       value = header;
     }
-    if (!utils$1.isString(value))
-      return;
+    if (!utils$1.isString(value)) return;
     if (utils$1.isString(filter2)) {
       return value.indexOf(filter2) !== -1;
     }
@@ -1455,6 +1465,10 @@ to {
         setHeaders(header, valueOrRewrite);
       } else if (utils$1.isString(header) && (header = header.trim()) && !isValidHeaderName(header)) {
         setHeaders(parseHeaders(header), valueOrRewrite);
+      } else if (utils$1.isHeaders(header)) {
+        for (const [key, value] of header.entries()) {
+          setHeader(value, key, rewrite);
+        }
       } else {
         header != null && setHeader(valueOrRewrite, header, rewrite);
       }
@@ -1597,11 +1611,10 @@ to {
     };
   });
   utils$1.freezeMethods(AxiosHeaders);
-  const AxiosHeaders$1 = AxiosHeaders;
   function transformData(fns, response) {
-    const config = this || defaults$1;
+    const config = this || defaults;
     const context = response || config;
-    const headers = AxiosHeaders$1.from(context.headers);
+    const headers = AxiosHeaders.from(context.headers);
     let data = context.data;
     utils$1.forEach(fns, function transform(fn) {
       data = fn.call(config, data, headers.normalize(), response ? response.status : void 0);
@@ -1633,6 +1646,147 @@ to {
       ));
     }
   }
+  function parseProtocol(url) {
+    const match = /^([-+\w]{1,25})(:?\/\/|:)/.exec(url);
+    return match && match[1] || "";
+  }
+  function speedometer(samplesCount, min) {
+    samplesCount = samplesCount || 10;
+    const bytes = new Array(samplesCount);
+    const timestamps = new Array(samplesCount);
+    let head = 0;
+    let tail = 0;
+    let firstSampleTS;
+    min = min !== void 0 ? min : 1e3;
+    return function push(chunkLength) {
+      const now = Date.now();
+      const startedAt = timestamps[tail];
+      if (!firstSampleTS) {
+        firstSampleTS = now;
+      }
+      bytes[head] = chunkLength;
+      timestamps[head] = now;
+      let i2 = tail;
+      let bytesCount = 0;
+      while (i2 !== head) {
+        bytesCount += bytes[i2++];
+        i2 = i2 % samplesCount;
+      }
+      head = (head + 1) % samplesCount;
+      if (head === tail) {
+        tail = (tail + 1) % samplesCount;
+      }
+      if (now - firstSampleTS < min) {
+        return;
+      }
+      const passed = startedAt && now - startedAt;
+      return passed ? Math.round(bytesCount * 1e3 / passed) : void 0;
+    };
+  }
+  function throttle(fn, freq) {
+    let timestamp = 0;
+    let threshold = 1e3 / freq;
+    let lastArgs;
+    let timer;
+    const invoke = (args, now = Date.now()) => {
+      timestamp = now;
+      lastArgs = null;
+      if (timer) {
+        clearTimeout(timer);
+        timer = null;
+      }
+      fn.apply(null, args);
+    };
+    const throttled = (...args) => {
+      const now = Date.now();
+      const passed = now - timestamp;
+      if (passed >= threshold) {
+        invoke(args, now);
+      } else {
+        lastArgs = args;
+        if (!timer) {
+          timer = setTimeout(() => {
+            timer = null;
+            invoke(lastArgs);
+          }, threshold - passed);
+        }
+      }
+    };
+    const flush = () => lastArgs && invoke(lastArgs);
+    return [throttled, flush];
+  }
+  const progressEventReducer = (listener, isDownloadStream, freq = 3) => {
+    let bytesNotified = 0;
+    const _speedometer = speedometer(50, 250);
+    return throttle((e2) => {
+      const loaded = e2.loaded;
+      const total = e2.lengthComputable ? e2.total : void 0;
+      const progressBytes = loaded - bytesNotified;
+      const rate = _speedometer(progressBytes);
+      const inRange = loaded <= total;
+      bytesNotified = loaded;
+      const data = {
+        loaded,
+        total,
+        progress: total ? loaded / total : void 0,
+        bytes: progressBytes,
+        rate: rate ? rate : void 0,
+        estimated: rate && total && inRange ? (total - loaded) / rate : void 0,
+        event: e2,
+        lengthComputable: total != null,
+        [isDownloadStream ? "download" : "upload"]: true
+      };
+      listener(data);
+    }, freq);
+  };
+  const progressEventDecorator = (total, throttled) => {
+    const lengthComputable = total != null;
+    return [(loaded) => throttled[0]({
+      lengthComputable,
+      total,
+      loaded
+    }), throttled[1]];
+  };
+  const asyncDecorator = (fn) => (...args) => utils$1.asap(() => fn(...args));
+  const isURLSameOrigin = platform.hasStandardBrowserEnv ? (
+    // Standard browser envs have full support of the APIs needed to test
+    // whether the request URL is of the same origin as current location.
+    function standardBrowserEnv() {
+      const msie = platform.navigator && /(msie|trident)/i.test(platform.navigator.userAgent);
+      const urlParsingNode = document.createElement("a");
+      let originURL;
+      function resolveURL(url) {
+        let href = url;
+        if (msie) {
+          urlParsingNode.setAttribute("href", href);
+          href = urlParsingNode.href;
+        }
+        urlParsingNode.setAttribute("href", href);
+        return {
+          href: urlParsingNode.href,
+          protocol: urlParsingNode.protocol ? urlParsingNode.protocol.replace(/:$/, "") : "",
+          host: urlParsingNode.host,
+          search: urlParsingNode.search ? urlParsingNode.search.replace(/^\?/, "") : "",
+          hash: urlParsingNode.hash ? urlParsingNode.hash.replace(/^#/, "") : "",
+          hostname: urlParsingNode.hostname,
+          port: urlParsingNode.port,
+          pathname: urlParsingNode.pathname.charAt(0) === "/" ? urlParsingNode.pathname : "/" + urlParsingNode.pathname
+        };
+      }
+      originURL = resolveURL(window.location.href);
+      return function isURLSameOrigin2(requestURL) {
+        const parsed = utils$1.isString(requestURL) ? resolveURL(requestURL) : requestURL;
+        return parsed.protocol === originURL.protocol && parsed.host === originURL.host;
+      };
+    }()
+  ) : (
+    // Non standard browser envs (web workers, react-native) lack needed support.
+    /* @__PURE__ */ function nonStandardBrowserEnv() {
+      return function isURLSameOrigin2() {
+        return true;
+      };
+    }()
+  );
   const cookies = platform.hasStandardBrowserEnv ? (
     // Standard browser envs support document.cookie
     {
@@ -1676,345 +1830,7 @@ to {
     }
     return requestedURL;
   }
-  const isURLSameOrigin = platform.hasStandardBrowserEnv ? (
-    // Standard browser envs have full support of the APIs needed to test
-    // whether the request URL is of the same origin as current location.
-    function standardBrowserEnv() {
-      const msie = /(msie|trident)/i.test(navigator.userAgent);
-      const urlParsingNode = document.createElement("a");
-      let originURL;
-      function resolveURL(url) {
-        let href = url;
-        if (msie) {
-          urlParsingNode.setAttribute("href", href);
-          href = urlParsingNode.href;
-        }
-        urlParsingNode.setAttribute("href", href);
-        return {
-          href: urlParsingNode.href,
-          protocol: urlParsingNode.protocol ? urlParsingNode.protocol.replace(/:$/, "") : "",
-          host: urlParsingNode.host,
-          search: urlParsingNode.search ? urlParsingNode.search.replace(/^\?/, "") : "",
-          hash: urlParsingNode.hash ? urlParsingNode.hash.replace(/^#/, "") : "",
-          hostname: urlParsingNode.hostname,
-          port: urlParsingNode.port,
-          pathname: urlParsingNode.pathname.charAt(0) === "/" ? urlParsingNode.pathname : "/" + urlParsingNode.pathname
-        };
-      }
-      originURL = resolveURL(window.location.href);
-      return function isURLSameOrigin2(requestURL) {
-        const parsed = utils$1.isString(requestURL) ? resolveURL(requestURL) : requestURL;
-        return parsed.protocol === originURL.protocol && parsed.host === originURL.host;
-      };
-    }()
-  ) : (
-    // Non standard browser envs (web workers, react-native) lack needed support.
-    /* @__PURE__ */ function nonStandardBrowserEnv() {
-      return function isURLSameOrigin2() {
-        return true;
-      };
-    }()
-  );
-  function parseProtocol(url) {
-    const match = /^([-+\w]{1,25})(:?\/\/|:)/.exec(url);
-    return match && match[1] || "";
-  }
-  function speedometer(samplesCount, min) {
-    samplesCount = samplesCount || 10;
-    const bytes = new Array(samplesCount);
-    const timestamps = new Array(samplesCount);
-    let head = 0;
-    let tail = 0;
-    let firstSampleTS;
-    min = min !== void 0 ? min : 1e3;
-    return function push(chunkLength) {
-      const now = Date.now();
-      const startedAt = timestamps[tail];
-      if (!firstSampleTS) {
-        firstSampleTS = now;
-      }
-      bytes[head] = chunkLength;
-      timestamps[head] = now;
-      let i2 = tail;
-      let bytesCount = 0;
-      while (i2 !== head) {
-        bytesCount += bytes[i2++];
-        i2 = i2 % samplesCount;
-      }
-      head = (head + 1) % samplesCount;
-      if (head === tail) {
-        tail = (tail + 1) % samplesCount;
-      }
-      if (now - firstSampleTS < min) {
-        return;
-      }
-      const passed = startedAt && now - startedAt;
-      return passed ? Math.round(bytesCount * 1e3 / passed) : void 0;
-    };
-  }
-  function progressEventReducer(listener, isDownloadStream) {
-    let bytesNotified = 0;
-    const _speedometer = speedometer(50, 250);
-    return (e2) => {
-      const loaded = e2.loaded;
-      const total = e2.lengthComputable ? e2.total : void 0;
-      const progressBytes = loaded - bytesNotified;
-      const rate = _speedometer(progressBytes);
-      const inRange = loaded <= total;
-      bytesNotified = loaded;
-      const data = {
-        loaded,
-        total,
-        progress: total ? loaded / total : void 0,
-        bytes: progressBytes,
-        rate: rate ? rate : void 0,
-        estimated: rate && total && inRange ? (total - loaded) / rate : void 0,
-        event: e2
-      };
-      data[isDownloadStream ? "download" : "upload"] = true;
-      listener(data);
-    };
-  }
-  const isXHRAdapterSupported = typeof XMLHttpRequest !== "undefined";
-  const xhrAdapter = isXHRAdapterSupported && function(config) {
-    return new Promise(function dispatchXhrRequest(resolve, reject) {
-      let requestData = config.data;
-      const requestHeaders = AxiosHeaders$1.from(config.headers).normalize();
-      let { responseType, withXSRFToken } = config;
-      let onCanceled;
-      function done() {
-        if (config.cancelToken) {
-          config.cancelToken.unsubscribe(onCanceled);
-        }
-        if (config.signal) {
-          config.signal.removeEventListener("abort", onCanceled);
-        }
-      }
-      let contentType;
-      if (utils$1.isFormData(requestData)) {
-        if (platform.hasStandardBrowserEnv || platform.hasStandardBrowserWebWorkerEnv) {
-          requestHeaders.setContentType(false);
-        } else if ((contentType = requestHeaders.getContentType()) !== false) {
-          const [type, ...tokens] = contentType ? contentType.split(";").map((token) => token.trim()).filter(Boolean) : [];
-          requestHeaders.setContentType([type || "multipart/form-data", ...tokens].join("; "));
-        }
-      }
-      let request = new XMLHttpRequest();
-      if (config.auth) {
-        const username = config.auth.username || "";
-        const password = config.auth.password ? unescape(encodeURIComponent(config.auth.password)) : "";
-        requestHeaders.set("Authorization", "Basic " + btoa(username + ":" + password));
-      }
-      const fullPath = buildFullPath(config.baseURL, config.url);
-      request.open(config.method.toUpperCase(), buildURL(fullPath, config.params, config.paramsSerializer), true);
-      request.timeout = config.timeout;
-      function onloadend() {
-        if (!request) {
-          return;
-        }
-        const responseHeaders = AxiosHeaders$1.from(
-          "getAllResponseHeaders" in request && request.getAllResponseHeaders()
-        );
-        const responseData = !responseType || responseType === "text" || responseType === "json" ? request.responseText : request.response;
-        const response = {
-          data: responseData,
-          status: request.status,
-          statusText: request.statusText,
-          headers: responseHeaders,
-          config,
-          request
-        };
-        settle(function _resolve(value) {
-          resolve(value);
-          done();
-        }, function _reject(err) {
-          reject(err);
-          done();
-        }, response);
-        request = null;
-      }
-      if ("onloadend" in request) {
-        request.onloadend = onloadend;
-      } else {
-        request.onreadystatechange = function handleLoad() {
-          if (!request || request.readyState !== 4) {
-            return;
-          }
-          if (request.status === 0 && !(request.responseURL && request.responseURL.indexOf("file:") === 0)) {
-            return;
-          }
-          setTimeout(onloadend);
-        };
-      }
-      request.onabort = function handleAbort() {
-        if (!request) {
-          return;
-        }
-        reject(new AxiosError("Request aborted", AxiosError.ECONNABORTED, config, request));
-        request = null;
-      };
-      request.onerror = function handleError() {
-        reject(new AxiosError("Network Error", AxiosError.ERR_NETWORK, config, request));
-        request = null;
-      };
-      request.ontimeout = function handleTimeout() {
-        let timeoutErrorMessage = config.timeout ? "timeout of " + config.timeout + "ms exceeded" : "timeout exceeded";
-        const transitional2 = config.transitional || transitionalDefaults;
-        if (config.timeoutErrorMessage) {
-          timeoutErrorMessage = config.timeoutErrorMessage;
-        }
-        reject(new AxiosError(
-          timeoutErrorMessage,
-          transitional2.clarifyTimeoutError ? AxiosError.ETIMEDOUT : AxiosError.ECONNABORTED,
-          config,
-          request
-        ));
-        request = null;
-      };
-      if (platform.hasStandardBrowserEnv) {
-        withXSRFToken && utils$1.isFunction(withXSRFToken) && (withXSRFToken = withXSRFToken(config));
-        if (withXSRFToken || withXSRFToken !== false && isURLSameOrigin(fullPath)) {
-          const xsrfValue = config.xsrfHeaderName && config.xsrfCookieName && cookies.read(config.xsrfCookieName);
-          if (xsrfValue) {
-            requestHeaders.set(config.xsrfHeaderName, xsrfValue);
-          }
-        }
-      }
-      requestData === void 0 && requestHeaders.setContentType(null);
-      if ("setRequestHeader" in request) {
-        utils$1.forEach(requestHeaders.toJSON(), function setRequestHeader(val, key) {
-          request.setRequestHeader(key, val);
-        });
-      }
-      if (!utils$1.isUndefined(config.withCredentials)) {
-        request.withCredentials = !!config.withCredentials;
-      }
-      if (responseType && responseType !== "json") {
-        request.responseType = config.responseType;
-      }
-      if (typeof config.onDownloadProgress === "function") {
-        request.addEventListener("progress", progressEventReducer(config.onDownloadProgress, true));
-      }
-      if (typeof config.onUploadProgress === "function" && request.upload) {
-        request.upload.addEventListener("progress", progressEventReducer(config.onUploadProgress));
-      }
-      if (config.cancelToken || config.signal) {
-        onCanceled = (cancel) => {
-          if (!request) {
-            return;
-          }
-          reject(!cancel || cancel.type ? new CanceledError(null, config, request) : cancel);
-          request.abort();
-          request = null;
-        };
-        config.cancelToken && config.cancelToken.subscribe(onCanceled);
-        if (config.signal) {
-          config.signal.aborted ? onCanceled() : config.signal.addEventListener("abort", onCanceled);
-        }
-      }
-      const protocol = parseProtocol(fullPath);
-      if (protocol && platform.protocols.indexOf(protocol) === -1) {
-        reject(new AxiosError("Unsupported protocol " + protocol + ":", AxiosError.ERR_BAD_REQUEST, config));
-        return;
-      }
-      request.send(requestData || null);
-    });
-  };
-  const knownAdapters = {
-    http: httpAdapter,
-    xhr: xhrAdapter
-  };
-  utils$1.forEach(knownAdapters, (fn, value) => {
-    if (fn) {
-      try {
-        Object.defineProperty(fn, "name", { value });
-      } catch (e2) {
-      }
-      Object.defineProperty(fn, "adapterName", { value });
-    }
-  });
-  const renderReason = (reason) => `- ${reason}`;
-  const isResolvedHandle = (adapter) => utils$1.isFunction(adapter) || adapter === null || adapter === false;
-  const adapters = {
-    getAdapter: (adapters2) => {
-      adapters2 = utils$1.isArray(adapters2) ? adapters2 : [adapters2];
-      const { length } = adapters2;
-      let nameOrAdapter;
-      let adapter;
-      const rejectedReasons = {};
-      for (let i2 = 0; i2 < length; i2++) {
-        nameOrAdapter = adapters2[i2];
-        let id;
-        adapter = nameOrAdapter;
-        if (!isResolvedHandle(nameOrAdapter)) {
-          adapter = knownAdapters[(id = String(nameOrAdapter)).toLowerCase()];
-          if (adapter === void 0) {
-            throw new AxiosError(`Unknown adapter '${id}'`);
-          }
-        }
-        if (adapter) {
-          break;
-        }
-        rejectedReasons[id || "#" + i2] = adapter;
-      }
-      if (!adapter) {
-        const reasons = Object.entries(rejectedReasons).map(
-          ([id, state]) => `adapter ${id} ` + (state === false ? "is not supported by the environment" : "is not available in the build")
-        );
-        let s2 = length ? reasons.length > 1 ? "since :\n" + reasons.map(renderReason).join("\n") : " " + renderReason(reasons[0]) : "as no adapter specified";
-        throw new AxiosError(
-          `There is no suitable adapter to dispatch the request ` + s2,
-          "ERR_NOT_SUPPORT"
-        );
-      }
-      return adapter;
-    },
-    adapters: knownAdapters
-  };
-  function throwIfCancellationRequested(config) {
-    if (config.cancelToken) {
-      config.cancelToken.throwIfRequested();
-    }
-    if (config.signal && config.signal.aborted) {
-      throw new CanceledError(null, config);
-    }
-  }
-  function dispatchRequest(config) {
-    throwIfCancellationRequested(config);
-    config.headers = AxiosHeaders$1.from(config.headers);
-    config.data = transformData.call(
-      config,
-      config.transformRequest
-    );
-    if (["post", "put", "patch"].indexOf(config.method) !== -1) {
-      config.headers.setContentType("application/x-www-form-urlencoded", false);
-    }
-    const adapter = adapters.getAdapter(config.adapter || defaults$1.adapter);
-    return adapter(config).then(function onAdapterResolution(response) {
-      throwIfCancellationRequested(config);
-      response.data = transformData.call(
-        config,
-        config.transformResponse,
-        response
-      );
-      response.headers = AxiosHeaders$1.from(response.headers);
-      return response;
-    }, function onAdapterRejection(reason) {
-      if (!isCancel(reason)) {
-        throwIfCancellationRequested(config);
-        if (reason && reason.response) {
-          reason.response.data = transformData.call(
-            config,
-            config.transformResponse,
-            reason.response
-          );
-          reason.response.headers = AxiosHeaders$1.from(reason.response.headers);
-        }
-      }
-      return Promise.reject(reason);
-    });
-  }
-  const headersToObject = (thing) => thing instanceof AxiosHeaders$1 ? thing.toJSON() : thing;
+  const headersToObject = (thing) => thing instanceof AxiosHeaders ? { ...thing } : thing;
   function mergeConfig(config1, config2) {
     config2 = config2 || {};
     const config = {};
@@ -2092,7 +1908,528 @@ to {
     });
     return config;
   }
-  const VERSION = "1.6.7";
+  const resolveConfig = (config) => {
+    const newConfig = mergeConfig({}, config);
+    let { data, withXSRFToken, xsrfHeaderName, xsrfCookieName, headers, auth } = newConfig;
+    newConfig.headers = headers = AxiosHeaders.from(headers);
+    newConfig.url = buildURL(buildFullPath(newConfig.baseURL, newConfig.url), config.params, config.paramsSerializer);
+    if (auth) {
+      headers.set(
+        "Authorization",
+        "Basic " + btoa((auth.username || "") + ":" + (auth.password ? unescape(encodeURIComponent(auth.password)) : ""))
+      );
+    }
+    let contentType;
+    if (utils$1.isFormData(data)) {
+      if (platform.hasStandardBrowserEnv || platform.hasStandardBrowserWebWorkerEnv) {
+        headers.setContentType(void 0);
+      } else if ((contentType = headers.getContentType()) !== false) {
+        const [type, ...tokens] = contentType ? contentType.split(";").map((token) => token.trim()).filter(Boolean) : [];
+        headers.setContentType([type || "multipart/form-data", ...tokens].join("; "));
+      }
+    }
+    if (platform.hasStandardBrowserEnv) {
+      withXSRFToken && utils$1.isFunction(withXSRFToken) && (withXSRFToken = withXSRFToken(newConfig));
+      if (withXSRFToken || withXSRFToken !== false && isURLSameOrigin(newConfig.url)) {
+        const xsrfValue = xsrfHeaderName && xsrfCookieName && cookies.read(xsrfCookieName);
+        if (xsrfValue) {
+          headers.set(xsrfHeaderName, xsrfValue);
+        }
+      }
+    }
+    return newConfig;
+  };
+  const isXHRAdapterSupported = typeof XMLHttpRequest !== "undefined";
+  const xhrAdapter = isXHRAdapterSupported && function(config) {
+    return new Promise(function dispatchXhrRequest(resolve, reject) {
+      const _config = resolveConfig(config);
+      let requestData = _config.data;
+      const requestHeaders = AxiosHeaders.from(_config.headers).normalize();
+      let { responseType, onUploadProgress, onDownloadProgress } = _config;
+      let onCanceled;
+      let uploadThrottled, downloadThrottled;
+      let flushUpload, flushDownload;
+      function done() {
+        flushUpload && flushUpload();
+        flushDownload && flushDownload();
+        _config.cancelToken && _config.cancelToken.unsubscribe(onCanceled);
+        _config.signal && _config.signal.removeEventListener("abort", onCanceled);
+      }
+      let request = new XMLHttpRequest();
+      request.open(_config.method.toUpperCase(), _config.url, true);
+      request.timeout = _config.timeout;
+      function onloadend() {
+        if (!request) {
+          return;
+        }
+        const responseHeaders = AxiosHeaders.from(
+          "getAllResponseHeaders" in request && request.getAllResponseHeaders()
+        );
+        const responseData = !responseType || responseType === "text" || responseType === "json" ? request.responseText : request.response;
+        const response = {
+          data: responseData,
+          status: request.status,
+          statusText: request.statusText,
+          headers: responseHeaders,
+          config,
+          request
+        };
+        settle(function _resolve(value) {
+          resolve(value);
+          done();
+        }, function _reject(err) {
+          reject(err);
+          done();
+        }, response);
+        request = null;
+      }
+      if ("onloadend" in request) {
+        request.onloadend = onloadend;
+      } else {
+        request.onreadystatechange = function handleLoad() {
+          if (!request || request.readyState !== 4) {
+            return;
+          }
+          if (request.status === 0 && !(request.responseURL && request.responseURL.indexOf("file:") === 0)) {
+            return;
+          }
+          setTimeout(onloadend);
+        };
+      }
+      request.onabort = function handleAbort() {
+        if (!request) {
+          return;
+        }
+        reject(new AxiosError("Request aborted", AxiosError.ECONNABORTED, config, request));
+        request = null;
+      };
+      request.onerror = function handleError() {
+        reject(new AxiosError("Network Error", AxiosError.ERR_NETWORK, config, request));
+        request = null;
+      };
+      request.ontimeout = function handleTimeout() {
+        let timeoutErrorMessage = _config.timeout ? "timeout of " + _config.timeout + "ms exceeded" : "timeout exceeded";
+        const transitional2 = _config.transitional || transitionalDefaults;
+        if (_config.timeoutErrorMessage) {
+          timeoutErrorMessage = _config.timeoutErrorMessage;
+        }
+        reject(new AxiosError(
+          timeoutErrorMessage,
+          transitional2.clarifyTimeoutError ? AxiosError.ETIMEDOUT : AxiosError.ECONNABORTED,
+          config,
+          request
+        ));
+        request = null;
+      };
+      requestData === void 0 && requestHeaders.setContentType(null);
+      if ("setRequestHeader" in request) {
+        utils$1.forEach(requestHeaders.toJSON(), function setRequestHeader(val, key) {
+          request.setRequestHeader(key, val);
+        });
+      }
+      if (!utils$1.isUndefined(_config.withCredentials)) {
+        request.withCredentials = !!_config.withCredentials;
+      }
+      if (responseType && responseType !== "json") {
+        request.responseType = _config.responseType;
+      }
+      if (onDownloadProgress) {
+        [downloadThrottled, flushDownload] = progressEventReducer(onDownloadProgress, true);
+        request.addEventListener("progress", downloadThrottled);
+      }
+      if (onUploadProgress && request.upload) {
+        [uploadThrottled, flushUpload] = progressEventReducer(onUploadProgress);
+        request.upload.addEventListener("progress", uploadThrottled);
+        request.upload.addEventListener("loadend", flushUpload);
+      }
+      if (_config.cancelToken || _config.signal) {
+        onCanceled = (cancel) => {
+          if (!request) {
+            return;
+          }
+          reject(!cancel || cancel.type ? new CanceledError(null, config, request) : cancel);
+          request.abort();
+          request = null;
+        };
+        _config.cancelToken && _config.cancelToken.subscribe(onCanceled);
+        if (_config.signal) {
+          _config.signal.aborted ? onCanceled() : _config.signal.addEventListener("abort", onCanceled);
+        }
+      }
+      const protocol = parseProtocol(_config.url);
+      if (protocol && platform.protocols.indexOf(protocol) === -1) {
+        reject(new AxiosError("Unsupported protocol " + protocol + ":", AxiosError.ERR_BAD_REQUEST, config));
+        return;
+      }
+      request.send(requestData || null);
+    });
+  };
+  const composeSignals = (signals, timeout) => {
+    const { length } = signals = signals ? signals.filter(Boolean) : [];
+    if (timeout || length) {
+      let controller = new AbortController();
+      let aborted;
+      const onabort = function(reason) {
+        if (!aborted) {
+          aborted = true;
+          unsubscribe();
+          const err = reason instanceof Error ? reason : this.reason;
+          controller.abort(err instanceof AxiosError ? err : new CanceledError(err instanceof Error ? err.message : err));
+        }
+      };
+      let timer = timeout && setTimeout(() => {
+        timer = null;
+        onabort(new AxiosError(`timeout ${timeout} of ms exceeded`, AxiosError.ETIMEDOUT));
+      }, timeout);
+      const unsubscribe = () => {
+        if (signals) {
+          timer && clearTimeout(timer);
+          timer = null;
+          signals.forEach((signal2) => {
+            signal2.unsubscribe ? signal2.unsubscribe(onabort) : signal2.removeEventListener("abort", onabort);
+          });
+          signals = null;
+        }
+      };
+      signals.forEach((signal2) => signal2.addEventListener("abort", onabort));
+      const { signal } = controller;
+      signal.unsubscribe = () => utils$1.asap(unsubscribe);
+      return signal;
+    }
+  };
+  const streamChunk = function* (chunk, chunkSize) {
+    let len = chunk.byteLength;
+    if (len < chunkSize) {
+      yield chunk;
+      return;
+    }
+    let pos = 0;
+    let end;
+    while (pos < len) {
+      end = pos + chunkSize;
+      yield chunk.slice(pos, end);
+      pos = end;
+    }
+  };
+  const readBytes = async function* (iterable, chunkSize) {
+    for await (const chunk of readStream(iterable)) {
+      yield* streamChunk(chunk, chunkSize);
+    }
+  };
+  const readStream = async function* (stream) {
+    if (stream[Symbol.asyncIterator]) {
+      yield* stream;
+      return;
+    }
+    const reader = stream.getReader();
+    try {
+      for (; ; ) {
+        const { done, value } = await reader.read();
+        if (done) {
+          break;
+        }
+        yield value;
+      }
+    } finally {
+      await reader.cancel();
+    }
+  };
+  const trackStream = (stream, chunkSize, onProgress, onFinish) => {
+    const iterator = readBytes(stream, chunkSize);
+    let bytes = 0;
+    let done;
+    let _onFinish = (e2) => {
+      if (!done) {
+        done = true;
+        onFinish && onFinish(e2);
+      }
+    };
+    return new ReadableStream({
+      async pull(controller) {
+        try {
+          const { done: done2, value } = await iterator.next();
+          if (done2) {
+            _onFinish();
+            controller.close();
+            return;
+          }
+          let len = value.byteLength;
+          if (onProgress) {
+            let loadedBytes = bytes += len;
+            onProgress(loadedBytes);
+          }
+          controller.enqueue(new Uint8Array(value));
+        } catch (err) {
+          _onFinish(err);
+          throw err;
+        }
+      },
+      cancel(reason) {
+        _onFinish(reason);
+        return iterator.return();
+      }
+    }, {
+      highWaterMark: 2
+    });
+  };
+  const isFetchSupported = typeof fetch === "function" && typeof Request === "function" && typeof Response === "function";
+  const isReadableStreamSupported = isFetchSupported && typeof ReadableStream === "function";
+  const encodeText = isFetchSupported && (typeof TextEncoder === "function" ? /* @__PURE__ */ ((encoder) => (str) => encoder.encode(str))(new TextEncoder()) : async (str) => new Uint8Array(await new Response(str).arrayBuffer()));
+  const test = (fn, ...args) => {
+    try {
+      return !!fn(...args);
+    } catch (e2) {
+      return false;
+    }
+  };
+  const supportsRequestStream = isReadableStreamSupported && test(() => {
+    let duplexAccessed = false;
+    const hasContentType = new Request(platform.origin, {
+      body: new ReadableStream(),
+      method: "POST",
+      get duplex() {
+        duplexAccessed = true;
+        return "half";
+      }
+    }).headers.has("Content-Type");
+    return duplexAccessed && !hasContentType;
+  });
+  const DEFAULT_CHUNK_SIZE = 64 * 1024;
+  const supportsResponseStream = isReadableStreamSupported && test(() => utils$1.isReadableStream(new Response("").body));
+  const resolvers = {
+    stream: supportsResponseStream && ((res) => res.body)
+  };
+  isFetchSupported && ((res) => {
+    ["text", "arrayBuffer", "blob", "formData", "stream"].forEach((type) => {
+      !resolvers[type] && (resolvers[type] = utils$1.isFunction(res[type]) ? (res2) => res2[type]() : (_2, config) => {
+        throw new AxiosError(`Response type '${type}' is not supported`, AxiosError.ERR_NOT_SUPPORT, config);
+      });
+    });
+  })(new Response());
+  const getBodyLength = async (body) => {
+    if (body == null) {
+      return 0;
+    }
+    if (utils$1.isBlob(body)) {
+      return body.size;
+    }
+    if (utils$1.isSpecCompliantForm(body)) {
+      const _request = new Request(platform.origin, {
+        method: "POST",
+        body
+      });
+      return (await _request.arrayBuffer()).byteLength;
+    }
+    if (utils$1.isArrayBufferView(body) || utils$1.isArrayBuffer(body)) {
+      return body.byteLength;
+    }
+    if (utils$1.isURLSearchParams(body)) {
+      body = body + "";
+    }
+    if (utils$1.isString(body)) {
+      return (await encodeText(body)).byteLength;
+    }
+  };
+  const resolveBodyLength = async (headers, body) => {
+    const length = utils$1.toFiniteNumber(headers.getContentLength());
+    return length == null ? getBodyLength(body) : length;
+  };
+  const fetchAdapter = isFetchSupported && (async (config) => {
+    let {
+      url,
+      method,
+      data,
+      signal,
+      cancelToken,
+      timeout,
+      onDownloadProgress,
+      onUploadProgress,
+      responseType,
+      headers,
+      withCredentials = "same-origin",
+      fetchOptions
+    } = resolveConfig(config);
+    responseType = responseType ? (responseType + "").toLowerCase() : "text";
+    let composedSignal = composeSignals([signal, cancelToken && cancelToken.toAbortSignal()], timeout);
+    let request;
+    const unsubscribe = composedSignal && composedSignal.unsubscribe && (() => {
+      composedSignal.unsubscribe();
+    });
+    let requestContentLength;
+    try {
+      if (onUploadProgress && supportsRequestStream && method !== "get" && method !== "head" && (requestContentLength = await resolveBodyLength(headers, data)) !== 0) {
+        let _request = new Request(url, {
+          method: "POST",
+          body: data,
+          duplex: "half"
+        });
+        let contentTypeHeader;
+        if (utils$1.isFormData(data) && (contentTypeHeader = _request.headers.get("content-type"))) {
+          headers.setContentType(contentTypeHeader);
+        }
+        if (_request.body) {
+          const [onProgress, flush] = progressEventDecorator(
+            requestContentLength,
+            progressEventReducer(asyncDecorator(onUploadProgress))
+          );
+          data = trackStream(_request.body, DEFAULT_CHUNK_SIZE, onProgress, flush);
+        }
+      }
+      if (!utils$1.isString(withCredentials)) {
+        withCredentials = withCredentials ? "include" : "omit";
+      }
+      const isCredentialsSupported = "credentials" in Request.prototype;
+      request = new Request(url, {
+        ...fetchOptions,
+        signal: composedSignal,
+        method: method.toUpperCase(),
+        headers: headers.normalize().toJSON(),
+        body: data,
+        duplex: "half",
+        credentials: isCredentialsSupported ? withCredentials : void 0
+      });
+      let response = await fetch(request);
+      const isStreamResponse = supportsResponseStream && (responseType === "stream" || responseType === "response");
+      if (supportsResponseStream && (onDownloadProgress || isStreamResponse && unsubscribe)) {
+        const options = {};
+        ["status", "statusText", "headers"].forEach((prop) => {
+          options[prop] = response[prop];
+        });
+        const responseContentLength = utils$1.toFiniteNumber(response.headers.get("content-length"));
+        const [onProgress, flush] = onDownloadProgress && progressEventDecorator(
+          responseContentLength,
+          progressEventReducer(asyncDecorator(onDownloadProgress), true)
+        ) || [];
+        response = new Response(
+          trackStream(response.body, DEFAULT_CHUNK_SIZE, onProgress, () => {
+            flush && flush();
+            unsubscribe && unsubscribe();
+          }),
+          options
+        );
+      }
+      responseType = responseType || "text";
+      let responseData = await resolvers[utils$1.findKey(resolvers, responseType) || "text"](response, config);
+      !isStreamResponse && unsubscribe && unsubscribe();
+      return await new Promise((resolve, reject) => {
+        settle(resolve, reject, {
+          data: responseData,
+          headers: AxiosHeaders.from(response.headers),
+          status: response.status,
+          statusText: response.statusText,
+          config,
+          request
+        });
+      });
+    } catch (err) {
+      unsubscribe && unsubscribe();
+      if (err && err.name === "TypeError" && /fetch/i.test(err.message)) {
+        throw Object.assign(
+          new AxiosError("Network Error", AxiosError.ERR_NETWORK, config, request),
+          {
+            cause: err.cause || err
+          }
+        );
+      }
+      throw AxiosError.from(err, err && err.code, config, request);
+    }
+  });
+  const knownAdapters = {
+    http: httpAdapter,
+    xhr: xhrAdapter,
+    fetch: fetchAdapter
+  };
+  utils$1.forEach(knownAdapters, (fn, value) => {
+    if (fn) {
+      try {
+        Object.defineProperty(fn, "name", { value });
+      } catch (e2) {
+      }
+      Object.defineProperty(fn, "adapterName", { value });
+    }
+  });
+  const renderReason = (reason) => `- ${reason}`;
+  const isResolvedHandle = (adapter) => utils$1.isFunction(adapter) || adapter === null || adapter === false;
+  const adapters = {
+    getAdapter: (adapters2) => {
+      adapters2 = utils$1.isArray(adapters2) ? adapters2 : [adapters2];
+      const { length } = adapters2;
+      let nameOrAdapter;
+      let adapter;
+      const rejectedReasons = {};
+      for (let i2 = 0; i2 < length; i2++) {
+        nameOrAdapter = adapters2[i2];
+        let id;
+        adapter = nameOrAdapter;
+        if (!isResolvedHandle(nameOrAdapter)) {
+          adapter = knownAdapters[(id = String(nameOrAdapter)).toLowerCase()];
+          if (adapter === void 0) {
+            throw new AxiosError(`Unknown adapter '${id}'`);
+          }
+        }
+        if (adapter) {
+          break;
+        }
+        rejectedReasons[id || "#" + i2] = adapter;
+      }
+      if (!adapter) {
+        const reasons = Object.entries(rejectedReasons).map(
+          ([id, state]) => `adapter ${id} ` + (state === false ? "is not supported by the environment" : "is not available in the build")
+        );
+        let s2 = length ? reasons.length > 1 ? "since :\n" + reasons.map(renderReason).join("\n") : " " + renderReason(reasons[0]) : "as no adapter specified";
+        throw new AxiosError(
+          `There is no suitable adapter to dispatch the request ` + s2,
+          "ERR_NOT_SUPPORT"
+        );
+      }
+      return adapter;
+    },
+    adapters: knownAdapters
+  };
+  function throwIfCancellationRequested(config) {
+    if (config.cancelToken) {
+      config.cancelToken.throwIfRequested();
+    }
+    if (config.signal && config.signal.aborted) {
+      throw new CanceledError(null, config);
+    }
+  }
+  function dispatchRequest(config) {
+    throwIfCancellationRequested(config);
+    config.headers = AxiosHeaders.from(config.headers);
+    config.data = transformData.call(
+      config,
+      config.transformRequest
+    );
+    if (["post", "put", "patch"].indexOf(config.method) !== -1) {
+      config.headers.setContentType("application/x-www-form-urlencoded", false);
+    }
+    const adapter = adapters.getAdapter(config.adapter || defaults.adapter);
+    return adapter(config).then(function onAdapterResolution(response) {
+      throwIfCancellationRequested(config);
+      response.data = transformData.call(
+        config,
+        config.transformResponse,
+        response
+      );
+      response.headers = AxiosHeaders.from(response.headers);
+      return response;
+    }, function onAdapterRejection(reason) {
+      if (!isCancel(reason)) {
+        throwIfCancellationRequested(config);
+        if (reason && reason.response) {
+          reason.response.data = transformData.call(
+            config,
+            config.transformResponse,
+            reason.response
+          );
+          reason.response.headers = AxiosHeaders.from(reason.response.headers);
+        }
+      }
+      return Promise.reject(reason);
+    });
+  }
+  const VERSION = "1.7.7";
   const validators$1 = {};
   ["object", "boolean", "number", "function", "string", "symbol"].forEach((type, i2) => {
     validators$1[type] = function validator2(thing) {
@@ -2174,10 +2511,13 @@ to {
           let dummy;
           Error.captureStackTrace ? Error.captureStackTrace(dummy = {}) : dummy = new Error();
           const stack = dummy.stack ? dummy.stack.replace(/^.+\n/, "") : "";
-          if (!err.stack) {
-            err.stack = stack;
-          } else if (stack && !String(err.stack).endsWith(stack.replace(/^.+\n.+\n/, ""))) {
-            err.stack += "\n" + stack;
+          try {
+            if (!err.stack) {
+              err.stack = stack;
+            } else if (stack && !String(err.stack).endsWith(stack.replace(/^.+\n.+\n/, ""))) {
+              err.stack += "\n" + stack;
+            }
+          } catch (e2) {
           }
         }
         throw err;
@@ -2222,7 +2562,7 @@ to {
           delete headers[method];
         }
       );
-      config.headers = AxiosHeaders$1.concat(contextHeaders, headers);
+      config.headers = AxiosHeaders.concat(contextHeaders, headers);
       const requestInterceptorChain = [];
       let synchronousRequestInterceptors = true;
       this.interceptors.request.forEach(function unshiftRequestInterceptors(interceptor) {
@@ -2306,7 +2646,6 @@ to {
     Axios.prototype[method] = generateHTTPMethod();
     Axios.prototype[method + "Form"] = generateHTTPMethod(true);
   });
-  const Axios$1 = Axios;
   class CancelToken {
     constructor(executor) {
       if (typeof executor !== "function") {
@@ -2318,8 +2657,7 @@ to {
       });
       const token = this;
       this.promise.then((cancel) => {
-        if (!token._listeners)
-          return;
+        if (!token._listeners) return;
         let i2 = token._listeners.length;
         while (i2-- > 0) {
           token._listeners[i2](cancel);
@@ -2379,6 +2717,15 @@ to {
         this._listeners.splice(index, 1);
       }
     }
+    toAbortSignal() {
+      const controller = new AbortController();
+      const abort = (err) => {
+        controller.abort(err);
+      };
+      this.subscribe(abort);
+      controller.signal.unsubscribe = () => this.unsubscribe(abort);
+      return controller.signal;
+    }
     /**
      * Returns an object that contains a new `CancelToken` and a function that, when called,
      * cancels the `CancelToken`.
@@ -2394,7 +2741,6 @@ to {
       };
     }
   }
-  const CancelToken$1 = CancelToken;
   function spread(callback) {
     return function wrap(arr) {
       return callback.apply(null, arr);
@@ -2471,21 +2817,20 @@ to {
   Object.entries(HttpStatusCode).forEach(([key, value]) => {
     HttpStatusCode[value] = key;
   });
-  const HttpStatusCode$1 = HttpStatusCode;
   function createInstance(defaultConfig) {
-    const context = new Axios$1(defaultConfig);
-    const instance = bind(Axios$1.prototype.request, context);
-    utils$1.extend(instance, Axios$1.prototype, context, { allOwnKeys: true });
+    const context = new Axios(defaultConfig);
+    const instance = bind(Axios.prototype.request, context);
+    utils$1.extend(instance, Axios.prototype, context, { allOwnKeys: true });
     utils$1.extend(instance, context, null, { allOwnKeys: true });
     instance.create = function create(instanceConfig) {
       return createInstance(mergeConfig(defaultConfig, instanceConfig));
     };
     return instance;
   }
-  const axios = createInstance(defaults$1);
-  axios.Axios = Axios$1;
+  const axios = createInstance(defaults);
+  axios.Axios = Axios;
   axios.CanceledError = CanceledError;
-  axios.CancelToken = CancelToken$1;
+  axios.CancelToken = CancelToken;
   axios.isCancel = isCancel;
   axios.VERSION = VERSION;
   axios.toFormData = toFormData;
@@ -2497,16 +2842,15 @@ to {
   axios.spread = spread;
   axios.isAxiosError = isAxiosError;
   axios.mergeConfig = mergeConfig;
-  axios.AxiosHeaders = AxiosHeaders$1;
+  axios.AxiosHeaders = AxiosHeaders;
   axios.formToJSON = (thing) => formDataToJSON(utils$1.isHTMLForm(thing) ? new FormData(thing) : thing);
   axios.getAdapter = adapters.getAdapter;
-  axios.HttpStatusCode = HttpStatusCode$1;
+  axios.HttpStatusCode = HttpStatusCode;
   axios.default = axios;
   async function checkUser(provider, user) {
     const check = await axios.get(`https://kemono-api.mbaharip.com/check/${provider}/${user}`, {
       validateStatus(status) {
-        if (status > 500)
-          return false;
+        if (status > 500) return false;
         return true;
       }
     }).then((res) => {
@@ -2580,8 +2924,7 @@ Please report this issue to the developer at https://github.com/itskomori/kemono
         logger.debug(`Username from title: ${username}`);
         data = await checkUser("fanbox", username);
       }
-      if (!data)
-        throw new Error("Can't find user on kemono");
+      if (!data) throw new Error("Can't find user on kemono");
       _t.success(`User found, ${data.name}`, { id: toastId });
       return data;
     } catch (error) {
@@ -2600,11 +2943,9 @@ Please report this issue to the developer at https://github.com/itskomori/kemono
       if (!window)
         throw new Error("Window object not found, are you running in a browser?");
       const username = window.location.href.split("fansly.com/")[1].split("/")[0];
-      if (!username)
-        throw new Error("Failed to parse username from URL");
+      if (!username) throw new Error("Failed to parse username from URL");
       const getFromApi = await checkUser("fansly", username);
-      if (!getFromApi)
-        throw new Error("Can't find user on coomer");
+      if (!getFromApi) throw new Error("Can't find user on coomer");
       _t.success(`User found, ${getFromApi.name}`, {
         id: toastId
       });
@@ -2623,18 +2964,14 @@ Please report this issue to the developer at https://github.com/itskomori/kemono
   async function fantia(toastId) {
     var _a;
     try {
-      if (!window)
-        throw new Error("Window object not found, are you running in a browser?");
+      if (!window) throw new Error("Window object not found, are you running in a browser?");
       let id = null;
       const selector = document.querySelector("h1.fanclub-name > a");
-      if (!selector)
-        throw new Error("Failed to get id from fantia, please report this issue to the developer.");
+      if (!selector) throw new Error("Failed to get id from fantia, please report this issue to the developer.");
       id = (_a = selector.getAttribute("href")) == null ? void 0 : _a.split("fanclubs/")[1];
-      if (!id)
-        throw new Error("Failed to get id from fantia, please report this issue to the developer.");
+      if (!id) throw new Error("Failed to get id from fantia, please report this issue to the developer.");
       const getFromApi = await checkUser("fantia", id);
-      if (!getFromApi)
-        throw new Error("Can't find user on kemono");
+      if (!getFromApi) throw new Error("Can't find user on kemono");
       _t.success(`User found, ${getFromApi.name}`, { id: toastId });
       return getFromApi;
     } catch (error) {
@@ -2653,11 +2990,9 @@ Please report this issue to the developer at https://github.com/itskomori/kemono
       if (!window)
         throw new Error("Window object not found, are you running in a browser?");
       const username = window.location.href.split("onlyfans.com/")[1].split("/")[0];
-      if (!username)
-        throw new Error("Failed to parse username from URL");
+      if (!username) throw new Error("Failed to parse username from URL");
       const getFromApi = await checkUser("onlyfans", username);
-      if (!getFromApi)
-        throw new Error("Can't find user on coomer");
+      if (!getFromApi) throw new Error("Can't find user on coomer");
       _t.success(`User found, ${getFromApi.name}`, {
         id: toastId
       });
@@ -2678,17 +3013,15 @@ Please report this issue to the developer at https://github.com/itskomori/kemono
       if (!window)
         throw new Error("Window object not found, are you running in a browser?");
       const scriptElement = document.querySelector("script#__NEXT_DATA__");
-      if (!scriptElement)
-        throw new Error("Failed to get nextjs page props");
+      if (!scriptElement) throw new Error("Failed to get nextjs page props");
       const json = JSON.parse(scriptElement.innerHTML);
-      const id = json.props.pageProps.bootstrapEnvelope.bootstrap.campaign.data.relationships.creator.data.id;
+      const id = json.props.pageProps.bootstrapEnvelope.pageBootstrap.campaign.data.relationships.creator.data.id;
       if (!id)
         throw new Error(
           "Failed to get id from patreon, please report this issue to the developer."
         );
       const getFromApi = await checkUser("patreon", id);
-      if (!getFromApi)
-        throw new Error("Can't find user on kemono");
+      if (!getFromApi) throw new Error("Can't find user on kemono");
       _t.success(`User found, ${getFromApi.name}`, { id: toastId });
       return getFromApi;
     } catch (error) {
@@ -2750,16 +3083,16 @@ Please report this issue to the developer at https://github.com/itskomori/kemono
         }, 1e3);
       }
       timeout.current = setTimeout(() => {
-        const origin = window.location.origin.toLowerCase();
-        logger.log(`${origin} detected`);
+        const origin2 = window.location.origin.toLowerCase();
+        logger.log(`${origin2} detected`);
         logger.log("Preparing to check user on database...");
-        toastId.current = `toast-${origin}`;
+        toastId.current = `toast-${origin2}`;
         _t.loading("Checking this user on database...", {
           id: toastId.current
         });
         (async () => {
           let result = null;
-          if (origin.includes("onlyfans")) {
+          if (origin2.includes("onlyfans")) {
             let ele = document.querySelector("div.l-profile-page");
             while (!ele) {
               setStatus("loading");
@@ -2781,11 +3114,11 @@ Please report this issue to the developer at https://github.com/itskomori/kemono
               attempt.current = 0;
             }
           }
-          if (origin.includes("fansly")) {
+          if (origin2.includes("fansly")) {
             result = await fansly(toastId.current);
             setIsCreatorPage(true);
           }
-          if (origin.includes("fantia")) {
+          if (origin2.includes("fantia")) {
             let ele = document.querySelector(".fanclub-show-header");
             while (!ele && attempt.current <= 10) {
               setStatus("loading");
@@ -2807,7 +3140,7 @@ Please report this issue to the developer at https://github.com/itskomori/kemono
               attempt.current = 0;
             }
           }
-          if (origin.includes("fanbox")) {
+          if (origin2.includes("fanbox")) {
             let ele = document.querySelector("div[class*='CreatorPage']");
             while (!ele && attempt.current <= 10) {
               setStatus("loading");
@@ -2829,7 +3162,7 @@ Please report this issue to the developer at https://github.com/itskomori/kemono
               attempt.current = 0;
             }
           }
-          if (origin.includes("patreon")) {
+          if (origin2.includes("patreon")) {
             result = await patreon(toastId.current);
             setIsCreatorPage(true);
           }
